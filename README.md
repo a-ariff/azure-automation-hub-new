@@ -24,28 +24,24 @@
 ## ✨ Features
 
 ### 🔐 **User Management Automation**
-
 - **Automated User Provisioning**: Streamlined onboarding processes
 - **Role-Based Access Control**: Dynamic permission management
 - **Account Lifecycle Management**: Automated deactivation and cleanup
 - **Bulk Operations**: Mass user operations with error handling
 
 ### 📊 **Device Monitoring & Management**
-
 - **Real-time Device Health Monitoring**: Continuous status tracking
 - **Automated Compliance Reporting**: Regular compliance assessments
 - **Device Inventory Management**: Automated asset tracking
 - **Performance Metrics Collection**: Comprehensive system analytics
 
 ### 🏢 **Enterprise IT Operations**
-
 - **Infrastructure Automation**: Server provisioning and configuration
 - **Backup and Recovery Automation**: Scheduled backup operations
 - **Security Policy Enforcement**: Automated security compliance
 - **Cost Optimization**: Resource usage monitoring and optimization
 
 ### 🔧 **Advanced Capabilities**
-
 - **Multi-tenant Support**: Enterprise-grade scalability
 - **Error Handling & Logging**: Comprehensive audit trails
 - **Integration Ready**: API connections for third-party systems
@@ -53,13 +49,13 @@
 
 ## 🏗️ Repository Architecture
 
-![Azure Automation Hub Architecture](https://via.placeholder.com/800x400/1f2937/ffffff?text=Azure+Automation+Hub+Architecture)
+![Azure Automation Hub Architecture](https://via.placeholder.com/800x400/0078D4/FFFFFF?text=Azure+Automation+Hub+Architecture)
 
 The Azure Automation Hub ecosystem consists of four interconnected repositories that work together to provide comprehensive enterprise automation:
 
-• **azure-automation-hub-new**: Core repository containing runbooks, modules, and automation scripts for user management, device monitoring, and infrastructure operations
+• **azure-automation-hub-new**: Core repository containing runbooks, modules, and automation scripts for user management, device monitoring, and infrastructure operations  
 • **azure-network-configs**: Dedicated repository for network automation, VPN configurations, and connectivity solutions  
-• **azure-security-policies**: Centralized security policy templates, compliance automation, and governance frameworks
+• **azure-security-policies**: Centralized security policy templates, compliance automation, and governance frameworks  
 • **azure-monitoring-dashboards**: Custom monitoring solutions, alerting configurations, and performance analytics dashboards
 
 These repositories collaborate through shared modules, standardized APIs, and integrated deployment pipelines to deliver a unified Azure automation platform.
@@ -122,21 +118,18 @@ azure-automation-hub/
 ## 🚀 Quick Start
 
 ### Prerequisites
-
-• **Azure subscription** with appropriate permissions
-• **Azure PowerShell module (Az)** installed
-• **PowerShell 5.1** or later
-• **Azure Automation Account** configured
+- Azure subscription with appropriate permissions
+- Azure PowerShell module (Az) installed
+- PowerShell 5.1 or later
+- Azure Automation Account configured
 
 ### 1️⃣ Clone Repository
-
 ```bash
 git clone https://github.com/a-ariff/azure-automation-hub-new.git
 cd azure-automation-hub-new
 ```
 
 ### 2️⃣ Configure Azure Connection
-
 ```powershell
 # Connect to Azure
 Connect-AzAccount
@@ -146,7 +139,6 @@ Set-AzContext -SubscriptionId "your-subscription-id"
 ```
 
 ### 3️⃣ Import Required Modules
-
 ```powershell
 # Import custom modules
 Import-Module ./modules/common-functions.psm1
@@ -154,7 +146,6 @@ Import-Module ./modules/azure-helpers.psm1
 ```
 
 ### 4️⃣ Run Your First Automation
-
 ```powershell
 # Example: User provisioning
 ./runbooks/user-management/create-user.ps1 -UserName "john.doe" -Department "IT"
@@ -163,15 +154,13 @@ Import-Module ./modules/azure-helpers.psm1
 ## 📦 Installation
 
 ### Option 1: Azure Automation Account Deployment
-
-1. **Create Automation Account** in Azure Portal
-2. **Import Runbooks** from the runbooks/ directory
-3. **Install Required Modules** in Automation Account
-4. **Configure Credentials and Variables**
-5. **Schedule Runbooks** as needed
+1. Create Automation Account in Azure Portal
+2. Import Runbooks from the `runbooks/` directory
+3. Install Required Modules in Automation Account
+4. Configure Credentials and Variables
+5. Schedule Runbooks as needed
 
 ### Option 2: Local Development Setup
-
 ```powershell
 # Install Azure PowerShell
 Install-Module -Name Az -AllowClobber -Force
@@ -184,7 +173,6 @@ Install-Module -Name Microsoft.Graph -Force
 ## 🔨 Usage
 
 ### User Management Examples
-
 ```powershell
 # Create new user
 ./runbooks/user-management/create-user.ps1 -UserName "jane.smith" -Department "Sales"
@@ -197,7 +185,6 @@ Install-Module -Name Microsoft.Graph -Force
 ```
 
 ### Device Monitoring Examples
-
 ```powershell
 # Health check for all devices
 ./runbooks/device-monitoring/health-check.ps1 -ResourceGroup "rg-devices"
@@ -220,9 +207,9 @@ Install-Module -Name Microsoft.Graph -Force
 
 ### Additional Resources
 
-• 🌐 [Azure Automation Documentation](https://docs.microsoft.com/en-us/azure/automation/)
-• 💻 [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
-• 🔐 [Azure Security Best Practices](https://docs.microsoft.com/en-us/azure/security/)
+• 🌐 [Azure Automation Documentation](https://docs.microsoft.com/en-us/azure/automation/)  
+• 💻 [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)  
+• 🔐 [Azure Security Best Practices](https://docs.microsoft.com/en-us/azure/security/)  
 • 📊 [Azure Monitor Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
 
 ## 🤝 Contributing
@@ -239,30 +226,28 @@ We welcome contributions from the community! Please read our [Contributing Guide
 6. 🚀 Submit a pull request
 
 ### Development Guidelines
-
-• Follow PowerShell best practices
-• Include comprehensive error handling
-• Add logging for all operations
-• Write unit tests for new functions
-• Update documentation for changes
+- Follow PowerShell best practices
+- Include comprehensive error handling
+- Add logging for all operations
+- Write unit tests for new functions
+- Update documentation for changes
 
 ## 🔐 Security
 
 Security is our top priority. Please review our [Security Policy](SECURITY.md) for:
 
-• 🛡️ Security best practices
-• 🚨 Vulnerability reporting
-• 🔒 Secure configuration guidelines
+• 🛡️ Security best practices  
+• 🚨 Vulnerability reporting  
+• 🔒 Secure configuration guidelines  
 • 📋 Compliance requirements
 
 ### Security Features
-
-• ✅ Encrypted credential storage
-• ✅ Role-based access control
-• ✅ Audit logging
-• ✅ Secure communication
-• ✅ Input validation
-• ✅ Error message sanitization
+- ✅ Encrypted credential storage
+- ✅ Role-based access control
+- ✅ Audit logging
+- ✅ Secure communication
+- ✅ Input validation
+- ✅ Error message sanitization
 
 ## 📄 License
 
@@ -286,35 +271,34 @@ copies or substantial portions of the Software.
 
 ## 👨‍💻 Author
 
-**Ahmad Ariff**
+**Ariff Mohamed**
 
-• 🌐 GitHub: [@a-ariff](https://github.com/a-ariff)
-• 💼 LinkedIn: [Ahmad Ariff](https://linkedin.com/in/ahmad-ariff)
-• 📧 Email: ahmad.ariff@example.com
-• 🐦 Twitter: [@ahmad_ariff](https://twitter.com/ahmad_ariff)
+• 🌐 GitHub: [@a-ariff](https://github.com/a-ariff)  
+• 💼 LinkedIn: [Ariff Mohamed](https://linkedin.com/in/ariff-mohamed)  
+• 📧 Email: ariff@aglobaltec.com  
+• 🐦 Twitter: [@ariff_mohamed](https://twitter.com/ariff_mohamed)
 
 ### Acknowledgments
-
-• Microsoft Azure Team for excellent documentation
-• PowerShell Community for best practices
-• Contributors and beta testers
-• Open source community for inspiration
+- Microsoft Azure Team for excellent documentation
+- PowerShell Community for best practices
+- Contributors and beta testers
+- Open source community for inspiration
 
 ## 📞 Support
 
 ### Getting Help
 
-• 📖 Check the [Documentation](#-documentation) first
-• 🔍 Search [existing issues](https://github.com/a-ariff/azure-automation-hub-new/issues)
-• 💬 Start a [discussion](https://github.com/a-ariff/azure-automation-hub-new/discussions)
-• 🐛 Report [bugs](https://github.com/a-ariff/azure-automation-hub-new/issues/new?template=bug_report.md)
+• 📖 Check the [Documentation](#-documentation) first  
+• 🔍 Search [existing issues](https://github.com/a-ariff/azure-automation-hub-new/issues)  
+• 💬 Start a [discussion](https://github.com/a-ariff/azure-automation-hub-new/discussions)  
+• 🐛 Report [bugs](https://github.com/a-ariff/azure-automation-hub-new/issues/new?template=bug_report.md)  
 • 💡 Request [features](https://github.com/a-ariff/azure-automation-hub-new/issues/new?template=feature_request.md)
 
 ### Community
 
-• 💬 [Discussions](https://github.com/a-ariff/azure-automation-hub-new/discussions)
-• 🚀 [Releases](https://github.com/a-ariff/azure-automation-hub-new/releases)
-• 📊 [Project Board](https://github.com/a-ariff/azure-automation-hub-new/projects)
+• 💬 [Discussions](https://github.com/a-ariff/azure-automation-hub-new/discussions)  
+• 🚀 [Releases](https://github.com/a-ariff/azure-automation-hub-new/releases)  
+• 📊 [Project Board](https://github.com/a-ariff/azure-automation-hub-new/projects)  
 • 🎯 [Milestones](https://github.com/a-ariff/azure-automation-hub-new/milestones)
 
 ---
@@ -325,4 +309,4 @@ copies or substantial portions of the Software.
 
 ---
 
-*Made with ❤️ by [Ahmad Ariff](https://github.com/a-ariff)*
+*Made with ❤️ by [Ariff Mohamed](https://github.com/a-ariff)*
